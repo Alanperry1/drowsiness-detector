@@ -1,6 +1,5 @@
 # Drowsiness & Fatigue Detector
-**Android Mobile App — OpenCV + CameraX (No Pretrained Models)**  
-AIoT Lab | Instructor: Dr. Vasanth Iyer
+
 
 ---
 
