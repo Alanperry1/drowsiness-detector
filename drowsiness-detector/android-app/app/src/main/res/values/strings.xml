@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Drowsiness Detector</string>
+    <string name="loading_opencv">Loading OpenCV…</string>
+    <string name="mode_drowsiness">DROWSINESS</string>
+    <string name="mode_edges">EDGES</string>
+    <string name="mode_motion">MOTION</string>
+    <string name="alert_message">Drowsiness detected! Stay alert.</string>
+    <string name="btn_switch_mode">Switch Mode</string>
+    <string name="btn_dashboard">Dashboard</string>
+</resources>

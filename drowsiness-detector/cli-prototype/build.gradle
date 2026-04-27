@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group   = 'com.aiiot'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+application {
+    mainClass = 'com.aiiot.cli.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // OpenCV Java bindings — download from opencv.org/releases, place opencv-490.jar in libs/
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+jar {
+    manifest { attributes 'Main-Class': 'com.aiiot.cli.Main' }
+    from { configurations.runtimeClasspath.collect {
+        it.isDirectory() ? it : zipTree(it)
+    }}
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

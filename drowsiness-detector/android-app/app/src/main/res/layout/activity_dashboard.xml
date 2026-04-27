@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Report"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvSessionTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session: 00:00"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvAlertCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alerts triggered: 0"
+            android:textColor="#FFE57373"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvAvgEAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average EAR: 0.000"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvAvgFPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average FPS: 0.0"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

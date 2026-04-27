@@ -1,0 +1,56 @@
+# ── Android Build Outputs ─────────────────────────────────────────────────────
+*.apk
+*.aab
+*.dex
+/build/
+app/build/
+*/build/
+
+# ── Gradle ────────────────────────────────────────────────────────────────────
+.gradle/
+local.properties
+gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# ── Android Studio / IntelliJ ─────────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
+
+# ── OpenCV SDK (too large to commit — see README for download instructions) ───
+opencv/
+sdk/
+
+# ── Local keystore / signing configs ─────────────────────────────────────────
+*.jks
+*.keystore
+keystore.properties
+
+# ── Generated sources ─────────────────────────────────────────────────────────
+app/src/main/gen/
+*/generated/
+
+# ── CLI Prototype build output ────────────────────────────────────────────────
+cli-prototype/build/
+cli-prototype/libs/*.jar
+
+# ── OS and editor noise ───────────────────────────────────────────────────────
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.cursorrules
+
+# ── Test reports ──────────────────────────────────────────────────────────────
+app/src/test/
+app/src/androidTest/
+*/test-results/
+*/reports/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+output_*.jpg
